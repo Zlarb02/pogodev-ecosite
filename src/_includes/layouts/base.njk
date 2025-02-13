@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html lang="{{ i18next.language }}">
+<html lang="en">
 <head>
-  <title>Digital Solutions for Smart Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta:title">Digital Solutions for Smart Projects</title>
+  <meta name="description" data-i18n="meta:description" content="Default description">
   <link rel="stylesheet" href="/css/main.css">
-  <script src="/js/translation.js" type="module"></script>
+  <link rel="alternate" hreflang="en" href="{{ site.url }}/en/">
+  <link rel="alternate" hreflang="fr" href="{{ site.url }}/fr/">
 </head>
 <body>
-    <div class="lang-switcher">
-      <button onclick="switchLanguage('en')" class="px-3 py-1 rounded-lg" data-lang="en">EN</button>
-      <button onclick="switchLanguage('fr')" class="px-3 py-1 rounded-lg" data-lang="fr">FR</button>
-    </div>
-    {% block content %}{% endblock %}
+  <div class="lang-switcher" role="group" aria-label="Language switcher">
+    <button id="btn-en" class="px-3 py-1 rounded-lg" aria-label="Switch to English">EN</button>
+    <button id="btn-fr" class="px-3 py-1 rounded-lg" aria-label="Switch to French">FR</button>
+  </div>
+
+  <div id="content">
+        {% block content %}
+    <!-- Default content can go here if needed -->
+    {% endblock %}
+  </div>
+
+  <!-- Load i18next and plugins from CDN -->
+    <script src="https://unpkg.com/i18next@22.4.15/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.1.1/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.4/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="/js/i18n-config.js"></script>
+    <script src="/js/i18n-manager.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => I18nManager.initialize());
+    </script>
 </body>
 </html>

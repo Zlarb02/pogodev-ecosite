@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "title": "Votre Allié Digital pour des <span class='text-eco-green'>Projets Intelligents</span>",
+    "subtitle": "Des outils simples pour créateurs indépendants - Maximisez votre impact sans surcharge technique",
+    "cta": "Contactez-nous"
+  },
+  "approach": {
+    "title": "Pourquoi Travailler Avec Moi ?",
+    "cards": {
+      "solutions": {
+        "title": "Des Solutions Sensées",
+        "description": "Des outils sur mesure qui s'adaptent à vos besoins réels, évitant la complexité inutile."
+      },
+      "lightweight": {
+        "title": "Solutions Légères",
+        "description": "Des outils conçus sur mesure qui correspondent exactement à vos besoins, évitant les plateformes SaaS surchargées."
+      },
+      "partnership": {
+        "title": "Partenariat Direct",
+        "description": "Travaillez directement avec moi - pas d'intermédiaires, pas d'équipes commerciales, juste une expertise ciblée."
+      }
+    }
+  },
+  "services": {
+    "title": "Solutions Tech à Échelle Humaine",
+    "automation": {
+      "title": "Automatisation Sur Mesure",
+      "description": "Des flux de travail précis qui respectent votre temps et votre consommation d'énergie :",
+      "items": {
+        "item1": "Systèmes de traitement de documents",
+        "item2": "Automatisation de la communication client",
+        "item3": "Flux de synchronisation de données"
+      },
+      "pricing": {
+        "label": "Modèle de Prix Éthique :",
+        "value": "200-500€ installation + 20€/mois maintenance"
+      }
+    },
+    "development": {
+      "title": "Outils Digitaux Essentiels",
+      "description": "Solutions construites avec un objectif précis, évitant les fonctionnalités superflues :",
+      "items": {
+        "item1": "Plateformes communautaires",
+        "item2": "Tableaux de bord de projets",
+        "item3": "Systèmes de gestion des ressources"
+      },
+      "pricing": {
+        "label": "Développement Durable :",
+        "value": "500-1500€ prix unique"
+      }
+    }
+  },
+  "contact": {
+    "form": {
+      "name": {
+        "label": "Votre nom"
+      },
+      "email": {
+        "label": "Email",
+        "help": "Nous l'utiliserons uniquement pour répondre à votre demande"
+      },
+      "details": {
+        "label": "Détails du projet"
+      },
+      "success": "Message envoyé avec succès !",
+      "submit": "Envoyer le Message"
+    }
+  }
+}

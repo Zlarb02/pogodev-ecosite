@@ -1,0 +1,67 @@
+{"welcome_message": "Bienvenue sur notre site Web!",
+  "hero": {
+    "title": "Votre Allié Digital pour des <span class='text-eco-green'>Projets Intelligents</span>",
+    "subtitle": "Des outils simples pour créateurs indépendants - Maximisez votre impact sans complexité technique",
+    "cta": "Contactez-nous"
+  },
+  "approach": {
+    "title": "Pourquoi Travailler Avec Moi ?",
+    "cards": {
+      "solutions": {
+        "title": "Solutions Qui Ont du Sens",
+        "description": "Des outils personnalisés qui s'adaptent à vos besoins réels, évitant toute complexité inutile."
+      },
+      "lightweight": {
+        "title": "Solutions Légères",
+        "description": "Des outils sur mesure qui correspondent exactement à vos besoins, évitant les plateformes SaaS surchargées."
+      },
+      "partnership": {
+        "title": "Partenariat Direct",
+        "description": "Travaillez directement avec moi - pas d'intermédiaires, pas d'équipes commerciales, juste une expertise ciblée."
+      }
+    }
+  },
+  "services": {
+    "title": "Solutions Tech à Échelle Humaine",
+    "automation": {
+      "title": "Automatisation Sur Mesure",
+      "description": "Des flux de travail précis qui respectent votre temps et votre énergie :",
+      "features": {
+        "docs": "Systèmes de traitement de documents",
+        "communication": "Automatisation de la communication client",
+        "sync": "Flux de synchronisation des données"
+      },
+      "pricing": {
+        "title": "Modèle de Prix Éthique :",
+        "price": "200-500€ installation + 20€/mois maintenance"
+      }
+    },
+    "development": {
+      "title": "Outils Digitaux Essentiels",
+      "description": "Des solutions conçues avec précision, sans fonctionnalités superflues :",
+      "features": {
+        "community": "Plateformes communautaires",
+        "dashboards": "Tableaux de bord de projet",
+        "resources": "Systèmes de gestion des ressources"
+      },
+      "pricing": {
+        "title": "Développement Durable :",
+        "price": "500-1500€ prix unique"
+      }
+    }
+  },
+  "contact": {
+    "name": {
+      "label": "Votre nom"
+    },
+    "email": {
+      "label": "Email",
+      "help": "Nous l'utiliserons uniquement pour répondre à votre demande"
+    },
+    "project": {
+      "label": "Détails du projet"
+    },
+    "submit": "Envoyer le Message",
+    "success": "Message envoyé avec succès !"
+  }
+}

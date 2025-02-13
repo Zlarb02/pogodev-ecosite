@@ -26,42 +26,44 @@
     "automation": {
       "title": "Tailored Automation",
       "description": "Precision-crafted workflows that respect both your time and energy usage:",
-      "features": {
-        "docs": "Document processing systems",
-        "communication": "Client communication automation",
-        "sync": "Data synchronization flows"
+      "items": {
+        "item1": "Document processing systems",
+        "item2": "Client communication automation",
+        "item3": "Data synchronization flows"
       },
       "pricing": {
-        "title": "Ethical Pricing Model:",
-        "price": "€200-500 setup + €20/mo maintenance"
+        "label": "Ethical Pricing Model:",
+        "value": "€200-500 setup + €20/mo maintenance"
       }
     },
     "development": {
       "title": "Essential Digital Tools",
       "description": "Purpose-built solutions that avoid feature bloat:",
-      "features": {
-        "community": "Community hub platforms",
-        "dashboards": "Project dashboards",
-        "resources": "Resource management systems"
+      "items": {
+        "item1": "Community hub platforms",
+        "item2": "Project dashboards",
+        "item3": "Resource management systems"
       },
       "pricing": {
-        "title": "Sustainable Development:",
-        "price": "€500-1500 one-time fee"
+        "label": "Sustainable Development:",
+        "value": "€500-1500 one-time fee"
       }
     }
   },
   "contact": {
-    "name": {
-      "label": "Your name"
-    },
-    "email": {
-      "label": "Email",
-      "help": "We'll only use this to respond to your inquiry"
-    },
-    "project": {
-      "label": "Project details"
-    },
-    "submit": "Send Message",
-    "success": "Message sent successfully!"
+    "form": {
+      "name": {
+        "label": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "help": "We'll only use this to respond to your inquiry"
+      },
+      "details": {
+        "label": "Project details"
+      },
+      "success": "Message sent successfully!",
+      "submit": "Send Message"
+    }
   }
 }

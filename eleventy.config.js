@@ -11,6 +11,14 @@ module.exports = function (eleventyConfig) {
   // Pass through CSS files
   eleventyConfig.addPassthroughCopy("dist/css");
 
+  eleventyConfig.addPassthroughCopy({
+    "src/js": "js"
+});
+
+eleventyConfig.addPassthroughCopy({
+  "src/locales": "locales"
+});
+
   eleventyConfig.addAsyncShortcode("optimizedImage", async (src, alt) => {
     const imagePath = path.join(__dirname, "src", src);
 
