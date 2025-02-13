@@ -2,7 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply text-base bg-cyan-50;
+  }
+
+  body {
+    @apply font-normal leading-relaxed text-gray-900 antialiased;
+  }
+
+  h1 {
+    @apply text-[2.75rem] font-normal leading-tight;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-normal leading-tight;
+  }
+
+  /* Uniformisation des liens et boutons */
+  a,
+  button {
+    @apply font-normal;
+  }
+}
+
+@layer components {
+  /* Style du bouton principal */
+  .btn-primary {
+    @apply bg-teal-600 text-white px-6 py-3 rounded-md hover:bg-teal-700 transition-colors font-normal;
+  }
+
+  /* Style des cartes */
+  .card {
+    @apply bg-white p-6 rounded-md border border-teal-600/20 hover:shadow-lg transition-shadow;
+  }
+
+  /* Style des icônes circulaires */
+  .icon-circle {
+    @apply w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center text-white;
+  }
+
+  /* Style des champs de formulaire */
+  .form-input {
+    @apply w-full p-3 rounded-md bg-gray-900 border border-teal-600 focus:ring-2 focus:ring-cyan-50 text-white;
+  }
+
+  /* Style des labels de formulaire */
+  .form-label {
+    @apply block mb-2 font-normal text-gray-900;
+  }
+
+  /* Style des textes d'aide */
+  .help-text {
+    @apply text-sm text-teal-600/80 mt-1;
+  }
+}
+
 @layer utilities {
+  /* Transitions fluides */
+  .transition-standard {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Conteneur principal */
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -14,25 +84,50 @@
   }
 }
 
-@layer components {
-  .invalid-field {
-    @apply border-red-500 ring-2 ring-red-200;
-  }
+/* Styles spécifiques pour le sélecteur de langue */
+.lang-switcher {
+  @apply text-sm text-gray-600;
+}
 
-  .form-success {
-    @apply bg-light-eco text-dark-eco p-4 rounded-lg text-center;
-  }
+.lang-switcher a {
+  @apply hover:text-teal-600 transition-colors font-normal;
+}
 
-  .lang-switcher {
-    @apply fixed top-4 right-4 z-50 flex gap-2;
-  }
+.lang-switcher .active {
+  @apply text-teal-600;
+}
 
-  .lang-switcher button {
-    @apply bg-eco-green text-white hover:bg-dark-eco transition-colors;
-  }
+/* Animation pour les messages de succès */
+.form-success {
+  @apply transition-opacity duration-300;
+}
 
-  .lang-switcher button[data-lang].active {
-    @apply bg-dark-eco;
+.form-success.visible {
+  @apply opacity-100;
+}
+
+/* Style des listes */
+.list-content {
+  @apply list-disc pl-6 space-y-2 text-gray-600;
+}
+
+/* Style des sections */
+.section {
+  @apply py-20;
+}
+
+.section-light {
+  @apply bg-cyan-50;
+}
+
+.section-dark {
+  @apply bg-gray-900 text-white;
+}
+
+/* Ajustements pour le responsive */
+@screen md {
+  h1 {
+    @apply text-[2.75rem];
   }
 }
 

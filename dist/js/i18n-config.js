@@ -15,6 +15,6 @@ const i18nConfig = {
       caches: ['localStorage', 'cookie']
   },
   backend: {
-      loadPath: '/pogodev-ecosite/dist/locales/{{lng}}/{{ns}}.json',
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
   }
 };
