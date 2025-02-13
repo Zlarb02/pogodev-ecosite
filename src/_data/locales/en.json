@@ -1,11 +1,67 @@
 {
-  "lang": {
-    "heroTitle": "Your Digital Ally for <span class='text-eco-green'>Smart Projects</span>",
-    "heroSubtitle": "Simple tools for independent creators - Maximize your impact without the tech overwhelm",
-    "ctaButton": "Contact us",
-    "whyWorkTitle": "Why Work With Me?",
-    "solutionTitle": "Solutions That Make Sense",
-    "solutionText": "Custom tools that adapt to your actual needs...",
-    "dateFormat": "YYYY-MM-DD"
+  "hero": {
+    "title": "Your Digital Ally for <span class='text-eco-green'>Smart Projects</span>",
+    "subtitle": "Simple tools for independent creators - Maximize your impact without the tech overwhelm",
+    "cta": "Contact us"
+  },
+  "approach": {
+    "title": "Why Work With Me?",
+    "cards": {
+      "solutions": {
+        "title": "Solutions That Make Sense",
+        "description": "Custom tools that adapt to your actual needs, avoiding unnecessary complexity."
+      },
+      "lightweight": {
+        "title": "Lightweight Solutions",
+        "description": "Custom-built tools that fit your exact needs, avoiding bloated SaaS platforms."
+      },
+      "partnership": {
+        "title": "Direct Partnership",
+        "description": "Work directly with me - no middlemen, no sales teams, just focused expertise."
+      }
+    }
+  },
+  "services": {
+    "title": "Human-Scale Tech Solutions",
+    "automation": {
+      "title": "Tailored Automation",
+      "description": "Precision-crafted workflows that respect both your time and energy usage:",
+      "features": {
+        "docs": "Document processing systems",
+        "communication": "Client communication automation",
+        "sync": "Data synchronization flows"
+      },
+      "pricing": {
+        "title": "Ethical Pricing Model:",
+        "price": "€200-500 setup + €20/mo maintenance"
+      }
+    },
+    "development": {
+      "title": "Essential Digital Tools",
+      "description": "Purpose-built solutions that avoid feature bloat:",
+      "features": {
+        "community": "Community hub platforms",
+        "dashboards": "Project dashboards",
+        "resources": "Resource management systems"
+      },
+      "pricing": {
+        "title": "Sustainable Development:",
+        "price": "€500-1500 one-time fee"
+      }
+    }
+  },
+  "contact": {
+    "name": {
+      "label": "Your name"
+    },
+    "email": {
+      "label": "Email",
+      "help": "We'll only use this to respond to your inquiry"
+    },
+    "project": {
+      "label": "Project details"
+    },
+    "submit": "Send Message",
+    "success": "Message sent successfully!"
   }
 }
