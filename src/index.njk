@@ -1,0 +1,171 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <!-- Hero Section -->
+  <section class="min-h-screen bg-light-eco flex items-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-6xl font-bold text-dark-eco mb-6">
+        Your Digital Ally for <span class='text-eco-green'>Smart Projects</span>
+      </h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Simple tools for independent creators - Maximize your impact without the tech overwhelm
+      </p>
+      <a href="#contact" class="bg-eco-green text-white px-8 py-3 rounded-lg hover:bg-dark-eco transition-colors scroll-smooth">
+        Contact us
+      </a>
+    </div>
+  </section>
+
+  <!-- Our Approach -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-dark-eco mb-12 text-center">Why Work With Me?</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Approach Card 1 -->
+        <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-12 h-12 bg-eco-green rounded-full mb-4 flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Solutions That Make Sense</h3>
+          <p class="text-gray-600">
+            Custom tools that adapt to your actual needs, avoiding unnecessary complexity.
+          </p>
+        </div>
+
+        <!-- Approach Card 2 -->
+        <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-12 h-12 bg-eco-green rounded-full mb-4 flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Lightweight Solutions</h3>
+          <p class="text-gray-600">
+            Custom-built tools that fit your exact needs,
+            avoiding bloated SaaS platforms.
+          </p>
+        </div>
+
+        <!-- Approach Card 3 -->
+        <div class="p-6 border rounded-lg hover:shadow-lg transition-shadow">
+          <div class="w-12 h-12 bg-eco-green rounded-full mb-4 flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Direct Partnership</h3>
+          <p class="text-gray-600">
+            Work directly with me - no middlemen,
+            no sales teams, just focused expertise.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-20 bg-light-eco">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-dark-eco mb-12 text-center">Human-Scale Tech Solutions</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Service 1: Bespoke Automation -->
+        <div class="bg-white p-8 rounded-xl shadow-md border border-eco-green/20">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-10 h-10 bg-eco-green rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-dark-eco">Tailored Automation</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Precision-crafted workflows that respect both your time and energy usage:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 mb-6">
+            <li class="text-gray-600">Document processing systems</li>
+            <li class="text-gray-600">Client communication automation</li>
+            <li class="text-gray-600">Data synchronization flows</li>
+          </ul>
+          <div class="bg-light-eco p-4 rounded-lg border border-eco-green/10">
+            <p class="text-sm font-semibold text-eco-green">Ethical Pricing Model:</p>
+            <p class="text-gray-600">€200-500 setup + €20/mo maintenance</p>
+          </div>
+        </div>
+
+        <!-- Service 2: Lightweight Development -->
+        <div class="bg-white p-8 rounded-xl shadow-md border border-eco-green/20">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-10 h-10 bg-eco-green rounded-full flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold text-dark-eco">Essential Digital Tools</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Purpose-built solutions that avoid feature bloat:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 mb-6">
+            <li class="text-gray-600">Community hub platforms</li>
+            <li class="text-gray-600">Project dashboards</li>
+            <li class="text-gray-600">Resource management systems</li>
+          </ul>
+          <div class="bg-light-eco p-4 rounded-lg border border-eco-green/10">
+            <p class="text-sm font-semibold text-eco-green">Sustainable Development:</p>
+            <p class="text-gray-600">€500-1500 one-time fee</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-dark-eco text-white scroll-mt-20">
+    <div class="container mx-auto px-4">
+      <form class="space-y-6" id="contactForm">
+        <div>
+          <label for="userName" class="block mb-2">Your name</label>
+          <input 
+            type="text" 
+            id="userName"
+            required
+            class="w-full p-3 rounded-lg bg-dark-eco border border-eco-green focus:ring-2 focus:ring-light-eco">
+        </div>
+
+        <div>
+          <label for="userEmail" class="block mb-2">Email</label>
+          <input 
+            type="email" 
+            id="userEmail"
+            required
+            aria-describedby="emailHelp"
+            class="w-full p-3 rounded-lg bg-dark-eco border border-eco-green focus:ring-2 focus:ring-light-eco">
+          <p id="emailHelp" class="text-sm text-eco-green/80 mt-1">
+            We'll only use this to respond to your inquiry
+          </p>
+        </div>
+
+        <div>
+          <label for="projectDetails" class="block mb-2">Project details</label>
+          <textarea 
+            id="projectDetails" 
+            rows="4"
+            required
+            class="w-full p-3 rounded-lg bg-dark-eco border border-eco-green focus:ring-2 focus:ring-light-eco"></textarea>
+        </div>
+
+        <div class="form-success opacity-0 transition-opacity duration-300" role="alert">
+          Message sent successfully!
+        </div>
+
+        <button type="submit" class="w-full bg-eco-green hover:bg-light-eco text-dark-eco font-bold py-3 px-6 rounded-lg transition-colors">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+{% endblock %}

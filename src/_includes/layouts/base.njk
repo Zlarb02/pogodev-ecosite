@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ i18next.language }}">
+<head>
+  <title>Digital Solutions for Smart Projects</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script type="module">
+    import i18next from '/js/i18n.js';
+    
+    function updateContent() {
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        element.innerHTML = i18next.t(key);
+      });
+    }
+
+    function switchLanguage(lang) {
+      i18next.changeLanguage(lang).then(() => {
+        updateContent();
+        document.documentElement.lang = lang;
+      });
+    }
+
+    window.switchLanguage = switchLanguage;
+
+    i18next.on('loaded', () => {
+      updateContent();
+    });
+
+    i18next.on('languageChanged', () => {
+      updateContent();
+    });
+  </script>
+</head>
+<body>
+    <div class="lang-switcher">
+      <button onclick="switchLanguage('en')" class="px-3 py-1 rounded-lg" data-lang="en">EN</button>
+      <button onclick="switchLanguage('fr')" class="px-3 py-1 rounded-lg" data-lang="fr">FR</button>
+    </div>
+    {% block content %}{% endblock %}
+</body>
+</html>
